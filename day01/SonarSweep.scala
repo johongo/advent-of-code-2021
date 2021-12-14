@@ -2,9 +2,11 @@ import scala.io.Source
 
 object SonarSweep {
   def solution(list: List[Int], window: Int) = {
-    val result: Int = list.sliding(window).count(pair => {
-      pair(window - 1) > pair(0)
-    })
+    val result: Int = list
+      .sliding(window)
+      .count(pair => {
+        pair(window - 1) > pair(0)
+      })
     println(result)
   }
 
