@@ -1,0 +1,10 @@
+#############
+#...........#
+###D#C#A#B###
+  #D#C#B#A#
+  #D#B#A#C#
+  #B#C#D#A#
+  #########
+
+// Move ambers left, coppers right
+// -> 46772
