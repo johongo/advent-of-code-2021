@@ -19,8 +19,7 @@ object LanternFish {
 
   def main(args: Array[String]): Unit = {
     val source = Source.fromFile("input.txt")
-    val line = source.getLines().toList(0)
-    val fishes = line.split(",").map(_.toInt)
+    val fishes = source.getLines().toList(0).split(",").map(_.toInt)
     solution(fishes, 80) // 5934
     solution(fishes, 256) // 26984457539
   }
