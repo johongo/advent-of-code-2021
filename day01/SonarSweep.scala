@@ -1,8 +1,8 @@
 import scala.io.Source
 
 object SonarSweep {
-  def solution(list: List[Int], window: Int) = {
-    val result: Int = list
+  def solution(depths: List[Int], window: Int) = {
+    val result: Int = depths
       .sliding(window)
       .count(pair => {
         pair(window - 1) > pair(0)
@@ -12,8 +12,8 @@ object SonarSweep {
 
   def main(args: Array[String]): Unit = {
     val source = Source.fromFile("input2.txt")
-    val list: List[Int] = source.getLines().map(_.toInt).toList
-    solution(list, 2) // 1692
-    solution(list, 4) // 1724
+    val depths: List[Int] = source.getLines().map(_.toInt).toList
+    solution(depths, 2) // 1692
+    solution(depths, 4) // 1724
   }
 }
