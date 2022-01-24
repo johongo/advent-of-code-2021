@@ -23,8 +23,8 @@ object Dive {
       val direction = parts(0)
       val units = parts(1).toInt
       direction match {
-        case "up"   => aim -= units
-        case "down" => aim += units
+        case "up"      => aim -= units
+        case "down"    => aim += units
         case "forward" => {
           x += units
           y += aim * units

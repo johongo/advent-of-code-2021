@@ -6,6 +6,7 @@ object LanternFish {
     fishes.foreach(fish => {
       count(fish) = count(fish) + 1
     })
+    
     for (day <- 1 to days) {
       val fish0 = count(0)
       for (i <- 1 to count.length - 1) {
